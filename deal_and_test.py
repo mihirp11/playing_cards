@@ -10,23 +10,23 @@ def main():
     for card in hand:
         print(card['face'] ,"of" ,card['suit'])
     print("This hand contains:")
-    if card_tests.is_straight_flush(hand):
+    if type(card_tests.is_straight_flush(hand)) == int:
         print("A Straight Flush")
-    elif card_tests.is_straight(hand):
+    elif type(card_tests.is_straight(hand)) == int:
         print("A Straight")
-    elif card_tests.is_flush(hand):
+    elif type(card_tests.is_flush(hand)) == int:
         print("A Flush")
-    elif card_tests.is_full_house(hand):
+    elif type(card_tests.is_full_house(hand)) == int:
         print("A Full House")
-    elif card_tests.is_4_of_a_kind(hand):
+    elif type(card_tests.is_4_of_a_kind(hand)) ==int:
         print("A 4 of a Kind")
-    elif card_tests.is_3_of_a_kind(hand):
+    elif type(card_tests.is_3_of_a_kind(hand)) == int:
         print("A 3 of a kind")
-    elif card_tests.is_2_pair(hand):
+    elif type(card_tests.is_2_pair(hand)) == int:
         print("A 2 pair")
-    elif card_tests.is_pair(hand):
+    elif type(card_tests.is_pair(hand)) == int:
         print('A pair')
-    elif card_tests.is_high_card(hand):
+    elif type(card_tests.is_high_card(hand)) == int:
         print("A High Card")
 if __name__ == '__main__':
     main()
